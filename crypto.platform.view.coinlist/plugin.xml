@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            defaultHandler="crypto.platform.view.coinlist.handler.RemoveHandler"
+            id="crypto.platform.view.coinlist.remove"
+            name="Remove">
+      </command>
+      <command
+            defaultHandler="crypto.platform.view.coinlist.handler.SetCurrencyHandler"
+            id="crypto.platform.view.coinlist.setcurrency"
+            name="Set Active Currency">
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            allPopups="false"
+            locationURI="popup:crypto.platform.view.coinlist.view">
+         <command
+               commandId="crypto.platform.view.coinlist.setcurrency"
+               label="Set Active Currency"
+               style="push">
+         </command>
+         <command
+               commandId="crypto.platform.view.coinlist.remove"
+               label="Remove"
+               style="push">
+         </command>
+      </menuContribution>
+   </extension>
+   <extension
+         point="org.eclipse.ui.editors">
+      <editor
+            default="false"
+            id="crypto.platform.view.coinlist.editor1"
+            name="name">
+      </editor>
+   </extension>
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            class="crypto.platform.view.coinlist.view.CoinListView"
+            id="crypto.platform.view.coinlist.view"
+            name="CoinListView"
+            restorable="true">
+      </view>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectiveExtensions">
+      <perspectiveExtension
+            targetID="crypto.application.perspective">
+         <view
+               id="crypto.platform.view.coinlist.view"
+               minimized="false"
+               ratio="0.50"
+               relationship="top"
+               relative="crypto.platform.view.chartlist.view"
+               visible="true">
+         </view>
+      </perspectiveExtension>
+      <perspectiveExtension
+            targetID="crypto.application.liveperspective">
+         <view
+               id="crypto.platform.view.coinlist.view"
+               minimized="false"
+               relationship="left"
+               relative="org.eclipse.ui.editorss"
+               visible="true">
+         </view>
+      </perspectiveExtension>
+   </extension>
+
+</plugin>

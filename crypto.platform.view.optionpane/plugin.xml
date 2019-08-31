@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.perspectiveExtensions">
+      <perspectiveExtension
+            targetID="crypto.application.perspective">
+         <view
+               id="crypto.platform.view.optionpane.view"
+               minimized="false"
+               ratio="0.15"
+               relationship="top"
+               relative="crypto.platform.view.chart.view">
+         </view>
+      </perspectiveExtension>
+   </extension>
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            class="crypto.platform.view.optionpane.view.OptionPaneView"
+            id="crypto.platform.view.optionpane.view"
+            name="OptionPaneView"
+            restorable="true">
+      </view>
+   </extension>
+
+</plugin>

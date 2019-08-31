@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            class="crypto.platform.view.chart.view.ChartView"
+            id="crypto.platform.view.chart.view"
+            name="Chart"
+            restorable="true">
+      </view>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectiveExtensions">
+      <perspectiveExtension
+            targetID="crypto.application.perspective">
+         <view
+               id="crypto.platform.view.chart.view"
+               minimized="false"
+               ratio="0.30"
+               relationship="right"
+               relative="crypto.platform.view.chartlist.view"
+               visible="true">
+         </view>
+      </perspectiveExtension>
+   </extension>
+
+</plugin>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.perspectiveExtensions">
+      <perspectiveExtension
+            targetID="crypto.application.perspective">
+         <view
+               id="crypto.platform.view.chartlist.view"
+               minimized="false"
+               relationship="left"
+               relative="org.eclipse.ui.editorss"
+               visible="true">
+         </view>
+      </perspectiveExtension>
+   </extension>
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            class="crypto.platform.view.chartlist.view.ChartListView"
+            id="crypto.platform.view.chartlist.view"
+            name="ChartListView"
+            restorable="true">
+      </view>
+   </extension>
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            defaultHandler="crypto.platform.view.chartlist.handler.SetActiveChart"
+            id="crypto.platform.view.chartlist.setchart"
+            name="Set Active Chart">
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            allPopups="false"
+            locationURI="popup:crypto.platform.view.chartlist.view">
+         <command
+               commandId="crypto.platform.view.chartlist.setchart"
+               label="Set Chart Type"
+               style="push">
+         </command>
+      </menuContribution>
+   </extension>
+
+</plugin>

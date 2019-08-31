@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Api
+Bundle-SymbolicName: crypto.api
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: crypto.api.Activator
+Require-Bundle: org.eclipse.core.runtime,
+ org.eclipse.ui;bundle-version="3.107.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Export-Package: crypto.api.cryptocompare.constants,
+ crypto.api.cryptocompare.request,
+ crypto.api.cryptocompare.response
+Import-Package: okhttp3,
+ org.apache.log4j

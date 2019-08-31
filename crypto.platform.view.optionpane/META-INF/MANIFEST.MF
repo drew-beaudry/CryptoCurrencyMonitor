@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Optionpane
+Bundle-SymbolicName: crypto.platform.view.optionpane;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: crypto.platform.view.optionpane.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Import-Package: 
+ crypto.model,
+ crypto.platform.dnd,
+ crypto.platform.service,
+ crypto.platform.ui.api.component,
+ crypto.platform.ui.api.controller,
+ crypto.platform.view.table.view
+Export-Package: crypto.platform.view.optionpane.controller,
+ crypto.platform.view.optionpane.view
