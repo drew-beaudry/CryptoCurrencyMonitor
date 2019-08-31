@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config date="1567281099898" transient="false">
+	<site updateable="true" url="platform:/base/" enabled="true" policy="USER-EXCLUDE">
+		<feature id="org.eclipse.e4.rcp" version="1.6.3.v20180329-0507" url="features/org.eclipse.e4.rcp_1.6.3.v20180329-0507/">
+		</feature>
+		<feature id="crypto.feature" version="1.0.0.201908311451" url="features/crypto.feature_1.0.0.201908311451/">
+		</feature>
+		<feature id="org.eclipse.emf.ecore" version="2.13.0.v20170609-0707" url="features/org.eclipse.emf.ecore_2.13.0.v20170609-0707/">
+		</feature>
+		<feature id="org.eclipse.rcp" version="4.7.3.v20180330-0640" url="features/org.eclipse.rcp_4.7.3.v20180330-0640/">
+		</feature>
+		<feature id="org.eclipse.emf.common" version="2.13.0.v20170609-0707" url="features/org.eclipse.emf.common_2.13.0.v20170609-0707/">
+		</feature>
+		<feature id="opensource.feature" version="1.0.0.201908311451" url="features/opensource.feature_1.0.0.201908311451/">
+		</feature>
+	</site>
+</config>
